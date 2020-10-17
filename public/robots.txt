@@ -1,0 +1,7 @@
+# Group 1 - Google
+User-agent: Googlebot
+Disallow: /no-googlebot/
+
+# Group 2 - all
+User-agent: *
+Allow: /
