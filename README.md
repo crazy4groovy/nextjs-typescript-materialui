@@ -1,8 +1,8 @@
-# Next.js with TypeScript and MaterialUI example
+# Next.js with TypeScript and MaterialUI and SWR example
 
 Note: master branch is named "main"
 
-## How to use
+## How to use (from cloned source)
 
 Download the example [or clone the repo](https://github.com/mui-org/material-ui):
 
