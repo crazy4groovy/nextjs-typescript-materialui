@@ -17,3 +17,7 @@ Install it and run:
 npm install
 npm run dev
 ```
+
+## Preact
+
+See: [here](https://github.com/developit/nextjs-preact-demo)
