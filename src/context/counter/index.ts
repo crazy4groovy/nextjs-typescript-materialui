@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { CounterStore } from "./types";
+import type { CounterStore } from "./types";
 
 export const defaultState: CounterStore = {
   counter: 0,

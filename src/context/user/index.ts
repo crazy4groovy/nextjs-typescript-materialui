@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { UserStore } from "./types";
+import type { UserStore } from "./types";
 
 export const defaultState: UserStore = {
   name: '',

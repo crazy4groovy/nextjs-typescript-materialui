@@ -1,4 +1,4 @@
-import { responseInterface } from "swr";
+import type { responseInterface } from "swr";
 
 export interface ApiStore {
   useItem: (id: number) => any;

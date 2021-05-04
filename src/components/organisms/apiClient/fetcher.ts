@@ -19,22 +19,3 @@ export const poster = (route: string, id = 0, body: string) =>
       },
     })
     .then(handleResponse);
-
-export const UpdateItem = (mutate?: Function) => async (
-  id: number,
-  data: any
-) => {
-  if (mutate) {
-    mutate(data, false); // trust...
-    console.log(data.name, "mutated (eager)");
-  }
-  try {
-    await poster("/api/items/", id, JSON.stringify(data));
-  } catch (err) {
-  } finally {
-    if (mutate) {
-      mutate(data, true); // but verify!
-      console.log(data.name, "mutated (verify)");
-    }
-  }
-};
