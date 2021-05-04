@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { CounterStore } from "./types";
+import type { CounterStore } from "./types";
 
 const contextProviderValue = (): CounterStore => {
   const [counter, setCounter] = useState(0);

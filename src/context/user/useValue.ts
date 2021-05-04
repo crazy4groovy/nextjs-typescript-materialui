@@ -1,6 +1,5 @@
 import { useMemo, useReducer } from "react";
-
-import { Action, UserStore, User } from "./types";
+import type { Action, UserStore, User } from "./types";
 
 const initialState: UserStore = {
   name: "",
