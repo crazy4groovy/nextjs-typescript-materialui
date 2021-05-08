@@ -51,6 +51,15 @@ export default function Component() {
               userStore._dispatch({ type: "age", payload: Number(value) || 0 });
             }}
           />
+          <br />
+          <br />
+          <Link href="/mystatic" color="secondary">
+            Go to a static page
+          </Link>
+          <br />
+          <Link href="/myposts/1" color="secondary">
+            Go to the first (static) post page
+          </Link>
         </Box>
         <ProTip />
         <Copyright />
