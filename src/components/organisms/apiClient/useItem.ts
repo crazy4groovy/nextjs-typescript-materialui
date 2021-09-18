@@ -12,21 +12,15 @@ export default function useItem(id: number): UseItem {
   };
 }
 
-const updateItem = (mutate?: typeof _mutate) => async (
-  id: number,
-  data: any
-) => {
-  if (mutate) {
+const updateItem =
+  (mutate: typeof _mutate) => async (id: number, data: any) => {
     mutate(data, false); // trust...
     console.log(data.name, "mutated (eager)");
-  }
-  try {
-    await poster("/api/items/", id, JSON.stringify(data));
-  } catch (err) {
-  } finally {
-    if (mutate) {
-      mutate(data, true); // but verify!
-      console.log(data.name, "mutated (verify)");
-    }
-  }
-};
+    const body = JSON.stringify(data);
+    return await poster("/api/items/", id, body)
+      .catch(() => {})
+      .finally(() => {
+        mutate(data, true); // but verify!
+        console.log(data.name, "mutated (verify)");
+      });
+  };
