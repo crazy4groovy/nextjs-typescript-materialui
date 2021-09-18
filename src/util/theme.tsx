@@ -1,10 +1,10 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import green from "@material-ui/core/colors/green";
 import grey from "@material-ui/core/colors/grey";
 import red from "@material-ui/core/colors/red";
 
 // Create a theme instance.
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       light: grey[700],
