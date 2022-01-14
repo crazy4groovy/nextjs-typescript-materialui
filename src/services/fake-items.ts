@@ -1,6 +1,6 @@
 /** Dummy data. */
 
-export const data = [
+export const items = [
   { id: 101, name: "1" },
   { id: 102, name: "22" },
   { id: 103, name: "333" },

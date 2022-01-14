@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
-import About from "../components/pages/about";
-import { useItem, useItems } from "../components/organisms/apiClient";
+import About from "../ui/about";
+import { useItem, useItems } from "../ui/apiClient";
 import { CounterContext, UserContext } from "../context";
 
 export default function Component(props: any) {

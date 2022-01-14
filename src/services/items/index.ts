@@ -1,5 +1,5 @@
-import { delay } from "../../../../util";
-import { data as fakeData } from "../../../../util/fake-data";
+import { delay } from "../../common";
+import { items as itemsData } from "../fake-items";
 
 const failurePercent = 20; // make this API very flakey!
 
@@ -21,5 +21,5 @@ export default async (req: any, res: any) => {
 
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify(fakeData));
+  res.end(JSON.stringify(itemsData));
 };

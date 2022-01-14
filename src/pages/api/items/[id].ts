@@ -1,1 +1,1 @@
-export {default} from '../../../components/pages/api/items/[id]';
+export {default} from '../../../services/items/[id]';

@@ -1,4 +1,4 @@
-import fetchPosts from "../../../../util/fake-posts-service";
+import fetchPosts from "../fake-posts-service";
 
 export default async (req: any, res: any) => {
   const id = String(req.query.id);

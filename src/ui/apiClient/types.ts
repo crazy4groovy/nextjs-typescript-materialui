@@ -1,4 +1,4 @@
-import type { responseInterface } from "swr";
+import type { SWRResponse } from "swr";
 
 export interface ApiStore {
   useItem: (id: number) => any;
@@ -6,8 +6,8 @@ export interface ApiStore {
   readItems: (cb?: Function) => Promise<any>;
 }
 
-export interface UseItem extends responseInterface<any, Error> {
+export interface UseItem extends SWRResponse<any, Error> {
   update: Function;
 }
 
-export interface UseItems extends responseInterface<any, Error> {}
+export interface UseItems extends SWRResponse<any, Error> {}

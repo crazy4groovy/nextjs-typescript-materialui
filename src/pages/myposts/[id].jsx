@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import fetchPosts from "../../util/fake-posts-service";
+import { useState } from "react";
+import fetchPosts from "../../services/fake-posts-service";
 
 const Component = (props) => {
   const [post, setPost] = useState(props);

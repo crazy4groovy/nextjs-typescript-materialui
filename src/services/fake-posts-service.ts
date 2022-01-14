@@ -5,7 +5,7 @@ const posts = [
   { id: "4", title: "Post 4", body: "Body 4!" },
 ];
 
-export default async function fetchUtil(url?: string): Promise<any> {
+export default async function service(url?: string): Promise<any> {
   if (!url) {
     return {
       ok: true,

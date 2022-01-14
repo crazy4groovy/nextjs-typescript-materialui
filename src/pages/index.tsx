@@ -4,9 +4,9 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 
-import ProTip from "../components/molecules/ProTip";
-import Link from "../components/atoms/Link";
-import Copyright from "../components/molecules/Copyright";
+import ProTip from "../ui/components/ProTip";
+import Link from "../ui/components/Link";
+import Copyright from "../ui/components/Copyright";
 import { CounterContext, UserContext } from "../context";
 
 export default function Component() {

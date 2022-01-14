@@ -1,6 +1,6 @@
-import { delay } from "../../../../util";
-import { data as fakeData } from "../../../../util/fake-data";
-import { delayMs } from './'
+import { delay } from "../../common";
+import { items as fakeItems } from "../fake-items";
+import { delayMs } from '.'
 
 const failurePercent = 40; // make this API very flakey!
 
@@ -24,7 +24,7 @@ export default async (req: any, res: any) => {
 
   // POST //
   if (req.method === "POST") {
-    const i = fakeData.findIndex((d: any) => d.id === id);
+    const i = fakeItems.findIndex((d: any) => d.id === id);
     console.log("POSTED!", i, id, req.body);
 
     if (i == null) {
@@ -34,7 +34,7 @@ export default async (req: any, res: any) => {
       return;
     }
 
-    fakeData[i] = req.body;
+    fakeItems[i] = req.body;
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     res.end(JSON.stringify(req.body));
@@ -42,7 +42,7 @@ export default async (req: any, res: any) => {
   }
 
   // GET //
-  const result = await fakeData.find((d: any) => d.id === id);
+  const result = await fakeItems.find((d: any) => d.id === id);
   console.log("GET!", result);
   if (!result) {
     res.statusCode = 404;

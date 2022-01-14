@@ -4,10 +4,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import { CircularProgress } from "@material-ui/core";
-import Link from "../../atoms/Link";
-import Alert from "../../atoms/Alert";
-import ProTip from "../../molecules/ProTip";
-import Copyright from "../../molecules/Copyright";
+import Link from "../components/Link";
+import Alert from "../components/Alert";
+import ProTip from "../components/ProTip";
+import Copyright from "../components/Copyright";
 import type { Props } from "./types";
 
 export default function About(props: Props) {

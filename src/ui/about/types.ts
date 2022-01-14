@@ -1,8 +1,8 @@
 import {
   CounterContextStore,
   UserContextStore,
-} from "../../../context";
-import { UseItem, UseItems } from "../../organisms/apiClient/types";
+} from "../../context";
+import { UseItem, UseItems } from "../apiClient/types";
 
 export interface Props
   extends CounterContextStore,

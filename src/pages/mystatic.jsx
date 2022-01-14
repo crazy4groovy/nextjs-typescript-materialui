@@ -4,8 +4,8 @@ const Component = (props) => {
 export default Component;
 
 export async function getStaticProps(context) {
-  // Normally you'd do something here with context and/or fetch, eg:
-  // const myvar = await fetch('http://myapi.com/...').then(r => r.json()).then(r => r.myvar)
+  // Normally, you'd do something here with context and/or fetch, eg:
+  // const totalPosts = await fetch('http://myapi.com/...').then(r => r.json()).then(r => r.totalPosts)
   const myvar = "!!";
 
   return {
